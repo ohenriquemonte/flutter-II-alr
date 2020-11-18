@@ -10,7 +10,8 @@ class _ContactFormState extends State<ContactForm> {
   @override
   Widget build(BuildContext context) {
     final TextEditingController _nameController = TextEditingController();
-    final TextEditingController _accountNumberController = TextEditingController();
+    final TextEditingController _accountNumberController =
+        TextEditingController();
 
     return Scaffold(
       appBar: AppBar(title: Text('New contact')),
@@ -44,8 +45,9 @@ class _ContactFormState extends State<ContactForm> {
                   child: Text('Create'),
                   onPressed: () {
                     final String name = _nameController.text;
-                    final int accountNumber = int.tryParse(_accountNumberController.text);
-                    final Contact newContact = Contact(name, accountNumber);
+                    final int accountNumber =
+                        int.tryParse(_accountNumberController.text);
+                    final Contact newContact = Contact(0, name, accountNumber);
 
                     Navigator.pop(context, newContact);
                   },
