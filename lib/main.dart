@@ -8,10 +8,10 @@ import 'models/contact.dart';
 
 void main() {
   runApp(BytebankApp());
-
-  save(Contact(0, 'Alex', 1000)).then((id) {
-    findAll().then((contacts) => debugPrint(contacts.toString()));
-  });
+  save(Contact(0, 'Fran', 5000));
+  // save(Contact(0, 'Alex', 1000)).then((id) {
+  //   findAll().then((contacts) => debugPrint(contacts.toString()));
+  // });
 }
 
 class BytebankApp extends StatelessWidget {
