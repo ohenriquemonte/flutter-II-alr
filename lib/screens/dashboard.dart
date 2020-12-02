@@ -12,7 +12,6 @@ class Dashboard extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          // Image.network('https://cdn.pixabay.com/photo/2019/10/15/06/03/pinwheel-4550711_960_720.jpg'),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Image.asset('images/bytebank_logo.png'),
@@ -37,14 +36,24 @@ class Dashboard extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-                      Icon(Icons.people, color: Colors.white, size: 32.0),
-                      Text('Contacts', style: TextStyle(color: Colors.white, fontSize: 16.0)),
+                      Icon(
+                        Icons.people,
+                        color: Colors.white,
+                        size: 24.0,
+                      ),
+                      Text(
+                        'Contacts',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 16.0,
+                        ),
+                      )
                     ],
                   ),
                 ),
               ),
             ),
-          ),
+          )
         ],
       ),
     );
